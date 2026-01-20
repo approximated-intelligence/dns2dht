@@ -1,11 +1,11 @@
-# Entangled / DHT DNS Resolver Suite (2009)
+# DHT DNS Resolver Prototype Suite (2009)
 
 > **Historical context:** This code was publicly demonstrated at **26C3, December 2009**:  
 > [https://media.ccc.de/v/26c3-3594-de-internetsperren](https://media.ccc.de/v/26c3-3594-de-internetsperren)  
 > It predates DNS-over-HTTPS: [https://en.wikipedia.org/wiki/DNS_over_HTTPS](https://en.wikipedia.org/wiki/DNS_over_HTTPS)  
-> Early mentions of decentralized DNS over a DHT include:  
-> [https://www.golem.de/1012/79791.html](https://www.golem.de/1012/79791.html) (Dec 2010)  
-> [https://p2pdns.baywords.com/2010/11/30/hello-world/](https://p2pdns.baywords.com/2010/11/30/hello-world/) (Nov 2010) — peer-to-peer DNS over DHT by Peter Sunde  
+> Other projects for decentralized DNS over a DHT include the peer-to-peer DNS over DHT by Peter Sunde from November 2010:  
+> [https://www.golem.de/1012/79791.html](https://www.golem.de/1012/79791.html)  
+> [https://p2pdns.baywords.com/2010/11/30/hello-world/](https://p2pdns.baywords.com/2010/11/30/hello-world/)   
 > [http://twitter.com/brokep/status/8768724777574401](http://twitter.com/brokep/status/8768724777574401)
 
 ---
@@ -62,15 +62,15 @@ A proof-of-concept **decentralized DNS/HTTP resolution system** using a **Kademl
 
 ## Notes
 
-- Python 2-era code; Twisted APIs may require older versions.  
+- Python 2-era code; Twisted APIs will require older versions.  
 - Dependencies: Twisted, SQLite.  
 - GUI components are excluded.  
 - Serialization is JSON-like but specific to DNS RR objects.  
-- Demonstrates early peer-to-peer DNS over DHT, well before DoH.
+- Early demonstratio of peer-to-peer DNS over DHT
+- Also demonstrates DNS over HTTP well before DoH.
 
 ---
 
 ## License
 
-GPL (GNU General Public License Version 3 or later), as included in original scripts.
-
+GPL (GNU General Public License Version 3 or later).
