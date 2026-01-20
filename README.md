@@ -1,4 +1,4 @@
-# DHT DNS Resolver Prototype Suite (2009)
+<img alt="DHT DNS Resolver Prototype Suite (2009)" src="https://repository-images.githubusercontent.com/1138513666/1f715a98-41c1-4174-9150-5ea59921883e" style="width: 100%; height: auto;" />
 
 > **Historical context:** This code was publicly demonstrated at **26C3, December 2009**:  
 > [https://media.ccc.de/v/26c3-3594-de-internetsperren](https://media.ccc.de/v/26c3-3594-de-internetsperren)  
