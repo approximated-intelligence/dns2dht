@@ -63,9 +63,12 @@ class DHTResolver(namesCommon.ResolverBase):
                     outerDf.errback(f)
                 d=self.resolver.typeToMethod[queryType](name)
                 d.addCallback(dnsAnswer).addErrback(dnsError)
+                
         def dhtError(f):
             message=f.getErrorMessage()
             DHTLogger.critical("DHT FAILURE: %s for %s [%s]" % (message,uri,key))
+            outerDf.errback(f)  # call the error callback of the outer Deferred
+            
         DHTLogger.info('REQUESTING %s [%s]' % (uri,b64encode(key)))
         self.node.iterativeFindValue(key).addCallback(dhtResult).addErrback(dhtError)
         return outerDf
